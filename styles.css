@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004d99;
+    /* Keeping skyblue as the final choice */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: #004d99;
+    color: orange;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 3rem;
+    gap: 1rem;
+    /* Space between the image and the heading */
+}
+
+header img {
+    height: 50px;
+    /* Adjust the size as per preference */
+    width: 50px;
+    border-radius: 50%;
+    /* Make the image circular */
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.search-section,
+.bus-results,
+.payment-section,
+.ticket-section,
+.payment-interface {
+    background-color: rgb(46, 154, 193);
+    padding: 45px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label,
+form input,
+form button {
+    margin-bottom: 15px;
+}
+
+form input,
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: #3b74f2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2f63d4;
+}
+
+.payment-options img {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+#ticketDetails img {
+    margin-top: 20px;
+    max-width: 150px;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .search-section,
+    .bus-results,
+    .payment-section,
+    .ticket-section,
+    .payment-interface {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 90%;
+        overflow-x: hidden;
+    }
+    header img {
+        height: 40px;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    .search-section,
+    .bus-results,
+    .payment-section,
+    .ticket-section,
+    .payment-interface {
+        width: 96%;
+    }
+    button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
